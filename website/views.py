@@ -5,7 +5,13 @@ from .models import Funcionario
 # Create your views here.
 def index(request):
 
-    print('Entramos na view =)')
+    #postman
 
-    return render(request, "home.html")
+    contexto = {
+        'nome_pessoa': 'João Alves Silva',
+        'endereco_pessoa': 'Rua 12',
+        'cidade_pessoa': 'Recife'
+    }
+
+    return render(request, "home.html", contexto)
 

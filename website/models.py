@@ -34,3 +34,20 @@ class Funcionario (models.Model):
     )
 
     funcionario = models.Manager()
+
+
+class Turma(models.Model):
+
+    nome = models.CharField(
+        max_length = 255,
+        blank = False,
+        null = False
+    )
+
+    periodo = models.CharField(
+        max_length = 255,
+        blank = False,
+        null = False
+    )
+
+    turma = models.Manager()
