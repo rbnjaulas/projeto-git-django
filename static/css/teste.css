@@ -49,8 +49,7 @@ li a {
 }
 
 li a:hover{
-    background-color: white;
-    color: black;
+    background-color: rgba(255,255,255,0.3);
 }
 
 .fonte_menu{
