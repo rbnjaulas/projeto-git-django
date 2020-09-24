@@ -1,8 +1,8 @@
-from django.shortcuts import render
 from django.http import JsonResponse
 from rest_framework.status import HTTP_200_OK, HTTP_400_BAD_REQUEST, HTTP_404_NOT_FOUND
 from .models import Clientes
 from django.views.decorators.csrf import csrf_exempt
+from django.core import serializers
 
 # Create your views here.
 @csrf_exempt
@@ -22,8 +22,6 @@ def cadastro(request):
         cliente.pais = request.POST.get('pais')
         cliente.email = request.POST.get('email')
         cliente.save()
-
-        #last_id = cliente.objects.latest('id')
 
         response = {
             'response': HTTP_200_OK

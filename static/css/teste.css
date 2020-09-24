@@ -83,6 +83,12 @@ li a:hover{
     padding-top: 15px;
 }
 
+.formulario_cadastro{
+    width: 1000px;
+    margin: auto;
+    padding-top: 15px;
+}
+
 .link_navegacao{
     font-family: Verdana;
     color: green;

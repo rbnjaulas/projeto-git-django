@@ -59,4 +59,3 @@ class Clientes(models.Model):
         blank=False
     )
 
-    clientes = models.Manager()
