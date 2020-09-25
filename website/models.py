@@ -33,7 +33,6 @@ class Funcionario (models.Model):
         blank = False
     )
 
-    funcionario = models.Manager()
 
 
 class Turma(models.Model):
@@ -49,5 +48,3 @@ class Turma(models.Model):
         blank = False,
         null = False
     )
-
-    turma = models.Manager()
